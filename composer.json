@@ -1,0 +1,29 @@
+{
+  "name": "messagebird/magento-integration",
+  "description": "Integrate Magento2 with MessageBird Flow Builder",
+  "license": "BSD-2-Clause",
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "MessageBird",
+      "email": "support@messagebird.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "magento/module-customer": ">=100.0.2",
+    "magento/framework": ">=100.0.2"
+  },
+  "autoload": {
+    "files": ["registration.php"],
+    "psr-4": {
+      "Messagebird\\": ""
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com"
+    }
+  ]
+}
